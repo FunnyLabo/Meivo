@@ -13,21 +13,13 @@ class DataEdit():
 	# 参加者を返す
 	@staticmethod
 	def return_join_member(datalist):
-		result_list = []
-		record_count = 1
-		for row in datalist:
-			if row[3] == Common._REQ_POST_CONDITION[1]:
-				result_list.append([record_count,row[1],row[2]])
-				record_count += 1
+		datalist = list(filter(lambda row:row[3] == Common._REQ_POST_CONDITION[1],datalist))
+		result_list = [[i,row[1],row[2]]for i,row in enumerate(datalist,1)]
 		return result_list
 
 	# 不参加者を返す
 	@staticmethod
 	def return_not_join_member(datalist):
-		result_list = []
-		record_count = 1
-		for row in datalist:
-			if row[3] == Common._REQ_POST_CONDITION[0] or row[3] == Common._REQ_POST_CONDITION[2]:
-				result_list.append([record_count,row[1],row[2]])
-				record_count += 1
+		datalist = list(filter(lambda row:row[3] == Common._REQ_POST_CONDITION[0] or row[3] == Common._REQ_POST_CONDITION[2],datalist))
+		result_list = [[i,row[1],row[2]]for i,row in enumerate(datalist,1)]
 		return result_list
