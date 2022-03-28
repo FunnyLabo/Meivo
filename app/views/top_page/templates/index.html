@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>meivo</title>
+        <meta name="viewport" content="width=360">
+        <!-- Bootstrap_CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- OriginalCSS -->
+        <link rel="stylesheet" href="./static/css/index.css">
+    </head>
+    <body>
+
+        <div id="app">
+            <header clsss="sticky-top">
+                <common-header  />
+            </header>
+            <router-view></router-view>
+        </div>
+
+        <!-- Vue.js_CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- Axios CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+        <!-- VueRouter CDN -->
+        <script src="https://unpkg.com/vue-router@3.5.2/dist/vue-router.js"></script>
+        <script src="https://unpkg.com/http-vue-loader"></script>
+        <!-- Original Components -->
+        <script src="./static/js/components/CommonHeader.js"></script>
+        <script src="./static/js/components/CommonSearch.js"></script>
+        <!-- Original Script -->
+        <script src="./static/js/router.js"></script>
+    </body>
+</html>

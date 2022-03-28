@@ -1,0 +1,11 @@
+__pycache__/
+.DS_store
+*.log
+*.pot
+*.pyc
+venv
+instance/
+.webassets-cache
+tests/
+static/csv/
+

@@ -1,0 +1,17 @@
+# インストールライブラリ(pipdeptreeで調査)
+# Flask依存ライブラリ
+Flask==2.0.2
+click==8.0.3
+colorama==0.4.4
+itsdangerous==2.0.1
+Jinja2==3.0.3
+MarkupSafe==2.0.1
+Werkzeug==2.0.2
+# openpyxl依存ライブラリ
+openpyxl==3.0.9
+et-xmlfile==1.1.0
+# pykakasi依存ライブラリ
+pykakasi==2.2.1
+Deprecated==1.2.13
+wrapt==1.14.0
+jaconv==0.3

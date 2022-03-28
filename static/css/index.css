@@ -1,0 +1,82 @@
+/* 全体摘要css */
+*{
+    padding:0;
+    margin:0
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI",
+     "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic Medium", "Yu Gothic", Verdana, Meiryo, sans-serif;
+     font-size:12pt;
+     background:#fefefe;
+}
+b, strong, .bold{
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI semibold",
+    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana, Meiryo, sans-serif;
+}
+h1{
+    color:#fcfcfc;
+    font-size:18pt;
+    padding:10px 10px;
+    margin:0;
+}
+.bg-white{
+    background:#fefefe;
+}
+.bg-white2{
+    background:#f9f9f9;
+}
+.bg-cream{
+    background:#ffe9d0;
+}
+.bg-cream2{
+    background:#ffebe3;
+}
+/* ヘッダー関連css */
+header{
+    background:#f28434;
+    height:18%;
+}
+.sticky-top{
+    position:sticky;
+    top:0;
+}
+/* サブメニュー関連css */
+.submenu{
+    height:20%;
+    background:#fefefe;
+}
+/* 参加可否一覧ページcss */
+.sticky_table_wrapper{
+    overflow:scroll;
+    height:82vh;
+}
+.sticky_table thead tr:nth-child(1){
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:1;
+}
+.sticky_table thead tr:nth-child(2){
+    position:sticky;
+    top:2.1rem;
+    left:0;
+    z-index:1;
+}
+.condition-btn{
+    width:93%;
+    margin:1px auto;
+}
+/* 集計結果ページcss */
+.sticky_total_table_wrapper{
+    overflow:scroll;
+    height:85.3vh;
+}
+.before-border-bottom::before{
+	content : "" ;
+	position : absolute ;
+	top : 0 ;
+	left : 0 ;
+	width : 100% ;
+	height : 100% ;
+	border-bottom : 2.5px solid #ddd ;
+}
