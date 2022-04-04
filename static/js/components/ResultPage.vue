@@ -10,27 +10,27 @@
 		</div>
 
 		<div class="sticky_total_table_wrapper">
-			<table class="table table-sm sticky_table" style=" border-collapse:collapse;border-spacing:0;" cellpadding="0" cellspacing="0">
+			<table class="table table-sm sticky_table">
 				<thead>
 					<tr class="bg-cream">
-						<th colspan="2" style="width: 50%;border-bottom:0px;text-align:center;border: 1px #eee solid;" class="before-border-bottom">参加者</th>
-						<th colspan="2" style="width: 50%;border-bottom:0px;text-align:center;border: 1px #eee solid;" class="before-border-bottom">不参加者</th>
+						<th colspan="2" style="width: 50%;border-bottom:0px;text-align:center;border:0;font-size:11pt;">参加者</th>
+						<th colspan="2" style="width: 50%;border-bottom:0px;text-align:center;border:0;font-size:11pt;">不参加者</th>
 					</tr>
 					<tr class="bg-cream2">
-						<th  scope="col" style="width: 25%;">部署</th>
-						<th  scope="col" style="width: 25%;">名前</th>
-						<th  scope="col" style="width: 25%;">部署</th>
-						<th  scope="col" style="width: 25%;">名前</th>
+						<th  scope="col" style="width: 25%;border:0;font-size:11pt;">部署</th>
+						<th  scope="col" style="width: 25%;border:0;font-size:11pt;">名前</th>
+						<th  scope="col" style="width: 25%;border:0;font-size:11pt;">部署</th>
+						<th  scope="col" style="width: 25%;border:0;font-size:11pt;">名前</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr v-for="(member,key) in editMembers" :key="key">
 						<!-- 参加者一覧 -->
-						<td scope="col" style="border:1px solid #ddd;">{{ member[0].dev }}</td>
-						<td scope="col" style="border:1px solid #ddd;">{{ member[0].name }}</td>
+						<td scope="col" style="border-right:1px solid #ddd;font-size:11pt;">{{ member[0].dev }}</td>
+						<td scope="col" style="font-size:11pt;">{{ member[0].name }}</td>
 						<!-- 不参加者一覧 -->
-						<td scope="col" style="background:#eee;border:1px solid #ddd;">{{ member[1].dev }}</td>
-						<td scope="col" style="background:#eee;border:1px solid #ddd;">{{ member[1].name }}</td>
+						<td scope="col" style="border-right:1px solid #ddd;background:#eee;font-size:11pt;">{{ member[1].dev }}</td>
+						<td scope="col" style="background:#eee;font-size:11pt;">{{ member[1].name }}</td>
 					</tr>
 				</tbody>
 			</table>

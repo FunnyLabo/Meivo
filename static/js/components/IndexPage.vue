@@ -9,12 +9,12 @@
 		</div>
 
 		<div class="sticky_table_wrapper bg-white2">
-			<table class="table table-sm sticky_table" style="border-top:0;">
+			<table class="table table-sm sticky_table">
 				<thead>
 					<tr class="bg-cream">
-							<th scope="col" style="width: 30%;">部署</th>
-							<th scope="col" style="width: 35%;">名前</th>
-							<th scope="col" style="width: 35%;"></th>
+							<th scope="col" style="width: 30%;border:0;">部署</th>
+							<th scope="col" style="width: 35%;border:0;">名前</th>
+							<th scope="col" style="width: 35%;border:0;"></th>
 					</tr>
 				</thead>
 				<tbody>
