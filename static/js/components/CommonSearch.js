@@ -2,13 +2,13 @@ Vue.component('common-search', {
 	template: `
 	<div>
 		<div class="d-flex select-content pb-1 mt-3 pl-3">
-			<select class="flex-fill form-select" style="border:1px solid #ccc;" aria-label="部署選択" @change="doChange">
+			<select class="flex-fill form-select" style="border:1px solid #ccc;font-size:10.5pt;" aria-label="部署選択" @change="doChange">
 				<option value="" disabled selected style="display:none;">部署を選択</option>
 				<option v-for="value in devList">[[ value ]]</option>
 			</select>
 			<div class="flex-fill"></div>
 			<div class="flex-fill form-group mb-0 ml-auto mr-3" >
-				<input type="text" class="form-control" placeholder="名前検索" @input="doInput">
+				<input type="text" class="form-control" style="font-size:10.5pt;" placeholder="名前検索" @input="doInput">
 			</div>
 		</div>
 		<p style="text-align:right;margin:0 17px 0 0;color:#333;font-size:.75rem;">※参加割合：[[ joinCount ]]/[[ filterdMembersLength ]]</p>
